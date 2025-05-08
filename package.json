@@ -1,0 +1,11 @@
+{
+  "name": "site-dkr",
+  "version": "1.0.0",
+  "description": "Site criado para, gerenciamento, obtenção de informações, DataBase de partidas e jogadores, informações e, 'Wiki' para o game PokéMMO",
+  "main": "index.js",
+  "scripts": {
+    "test": "Waterfall"
+  },
+  "author": "Magnus Arseph Venitch",
+  "license": "ISC"
+}
