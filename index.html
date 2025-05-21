@@ -3,18 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Dark Roses Team</title>
 </head>
 <body>
     <section id="main-section">
        <!--Carregar a página por meio do JS-->
        <div id="main-menu" class="generic-container">
-           <div id="circle-logo">
-              <img src="./Image/5 logo dkr 2025.png" alt="" srcset="" id="dkr-logo">
-           </div>
+           <div id="sub-menu" class="generic-container sub menu">
+            <div id="icon-home" class="generic-container icon home-vetor">
+               <img src="./Image/DiscordIconWhite.png" alt=""> 
+                 
+            </div>
 
-           
+             <div id="external-circle">
+               <div id="circle-logo">
+                 <img src="./Image/Logo 170x170.png" alt=imagem DKR" id="dkr-logo">
+               </div>
+             </div>
+
+            <div id="menu-option">
+               <ul class="list">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Campeonatos</a></li>
+                  <li><a href="">Eventos</a></li>
+               </ul>
+            </div>
+
+           </div>
        </div>
+
+       <article id="main-content">
+          <div id="DKR-content">
+               <h1 class="tittle">Dark Roses Team</h1>
+               <p>
+                
+               </p>
+          </div>
+       </article>
     </section>
+
+
+
+
+    <div class="petals-container" id="petals"></div>
+    <script>
+      // Cria pétalas dinamicamente
+      const container = document.getElementById('petals');
+      const colors = ['#8A2BE2', '#C3B1E1', '#4B0082', '#9370DB', '#2E0854' ];
+
+      for (let i = 0; i < 80; i++) {
+        const petal = document.createElement('div');
+        petal.classList.add('petal');
+        
+        const size = Math.random() * 10 + 5;
+        petal.style.width = `${size}px`;
+        petal.style.height = `${size}px`;
+        petal.style.left = `${Math.random() * 100}%`;
+        petal.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        petal.style.animationDuration = `${Math.random() * 5 + 3}s`;
+        petal.style.animationDelay = `${Math.random() * 5}s`;
+        
+        container.appendChild(petal);
+      }
+    </script>
 </body>
 </html>

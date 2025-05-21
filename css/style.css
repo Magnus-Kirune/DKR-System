@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/* CSS HEX */
+/*--casablanca: #f7b240;
+--governor-bay: #4435a8;
+--envy: #94a392;
+--cod-gray: #0a070a;
+--amaranth: #e92458;
+--parchment: #eee1cc;
+--cannon-pink: #83455d;
+--rhino: #2b3268;
+--cabbage-pont: #434a3c;
+--charm: #d5718b;*/
+/* SCSS HEX */
+/* SCSS RGB */
+/*--casablanca: rgba(247,178,64,1);
+--governor-bay: rgba(68,53,168,1);
+--envy: rgba(148,163,146,1);
+--cod-gray: rgba(10,7,10,1);
+--amaranth: rgba(233,36,88,1);
+--parchment: rgba(238,225,204,1);
+--cannon-pink: rgba(131,69,93,1);
+--rhino: rgba(43,50,104,1);
+--cabbage-pont: rgba(67,74,60,1);
+--charm: rgba(213,113,139,1);*/
+body {
+  background-color: #f7b240;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+a {
+  color: azure;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+#sub-menu {
+  background-color: #2b3268;
+  height: 16vh;
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 1fr;
+  color: beige;
+}
+#sub-menu #external-circle {
+  background-color: #f7b240;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sub-menu #external-circle #circle-logo {
+  background-color: #2b3268;
+  border-radius: 50%;
+}
+#sub-menu #menu-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16vh;
+}
+#sub-menu #menu-option ul {
+  list-style: none;
+  display: flex;
+  gap: 5vh;
+}
+
+#main-content {
+  background-color: rgb(35, 0, 46);
+  width: 98%;
+  height: 100vh;
+  margin-left: 1%;
+  padding-top: 15px;
+  margin-top: 15px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+#main-content #DKR-content {
+  width: 80%;
+  margin-top: 10vh;
+  display: grid;
+  grid-column: 1fr;
+  justify-content: center;
+}
+#main-content #DKR-content .tittle {
+  color: #eee1cc;
+  font-size: 50px;
+  font-family: "Black Ops One", system-ui;
+  text-shadow: 10px 10px 15px #434a3c;
+}
+
+/* === EFEITO DAS PÉTALAS (10% DA PÁGINA) === */
+.petals-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.petal {
+  position: absolute;
+  background-color: #4B0082;
+  opacity: 1;
+  border-radius: 50% 0 50% 50%;
+  animation: falling linear infinite;
+}
+
+@keyframes falling {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
