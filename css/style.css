@@ -31,9 +31,13 @@ body {
 }
 
 a {
-  color: azure;
+  color: #eee1cc;
   text-decoration: none;
   font-size: 21px;
+}
+
+p {
+  color: #eee1cc;
 }
 
 #sub-menu {
@@ -82,15 +86,18 @@ a {
 #main-content #DKR-content {
   width: 80%;
   margin-top: 10vh;
-  display: grid;
-  grid-column: 1fr;
-  justify-content: center;
+  justify-items: center;
 }
 #main-content #DKR-content .tittle {
   color: #eee1cc;
   font-size: 50px;
   font-family: "Black Ops One", system-ui;
   text-shadow: 10px 10px 15px #434a3c;
+}
+#main-content #DKR-content #intro-content {
+  width: 60%;
+  font-size: 22px;
+  text-align: center;
 }
 
 /* === EFEITO DAS PÉTALAS (10% DA PÁGINA) === */

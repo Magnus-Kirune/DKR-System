@@ -9,10 +9,14 @@ body {
 }
 
  a{
-        color: azure;
+        color: $parchment;
         text-decoration: none;
         font-size: 21px;
     }
+
+ p{
+    color: $parchment;
+ }
 
     
 
@@ -66,16 +70,19 @@ body {
     #DKR-content{
         width: 80%;
         margin-top: 10vh;
-        display: grid;
-        grid-column: 1fr;
-        justify-content: center;
-
+        justify-items: center;
 
         .tittle{
             color: $parchment;
             font-size: 50px;
             font-family: "Black Ops One", system-ui;
             text-shadow: 10px 10px 15px $cabbage-pont; 
+        }
+
+        #intro-content{
+            width: 60%;
+            font-size: 22px;
+            text-align: center;
         }
     }
 }
