@@ -18,3 +18,4 @@ export function efeitoPetala(){
         container.appendChild(petal);
       }
 }
+
