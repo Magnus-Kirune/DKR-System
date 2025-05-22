@@ -16,6 +16,7 @@ body {
 
  p{
     color: $parchment;
+    font-family: 'roboto';
  }
 
     
@@ -26,6 +27,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 0.4fr 1fr;
     color: beige;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
 
     #external-circle{
        background-color: $casablanca;
@@ -59,21 +62,25 @@ body {
 #main-content{
     background-color: $extreme-dark;
     width: 98%;
-    height: 100vh;
+    height: auto;
     margin-left: 1%;
     padding-top: 15px;
     margin-top: 15px;
     display: flex;
     align-content: center;
     justify-content: center;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
     
     #DKR-content{
         width: 80%;
 
         margin-top: 10vh;
         justify-items: center;
+        margin-bottom: auto;
 
         .tittle{
+            text-decoration: underline;
             color: $parchment;
             font-size: 50px;
             font-family: "Black Ops One", system-ui;
@@ -85,6 +92,33 @@ body {
             font-size: 22px;
             text-align: center;
         }
+
+        #buttonArea{
+            padding-top: 10vh;
+            display: flex;
+            gap: 5vh;
+
+            #BTN1{
+              background-color: $envy;
+              cursor: pointer;
+            }
+
+            #BTN2{
+              background-color: $rhino;
+              color: $parchment;
+              cursor: pointer;
+            }
+            .button{
+                width: 25vh;
+                height: 5vh;
+                border-radius: 5px;
+                border: none;
+                font-family: 'roboto';
+                font-size: 12px;
+                font-weight: bolder;
+          }
+        }
+        
     }
 }
 

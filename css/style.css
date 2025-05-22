@@ -15,6 +15,7 @@ a {
 
 p {
   color: #eee1cc;
+  font-family: "roboto";
 }
 
 #sub-menu {
@@ -23,6 +24,8 @@ p {
   display: grid;
   grid-template-columns: 1fr 0.4fr 1fr;
   color: beige;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
 }
 #sub-menu #external-circle {
   background-color: #f7b240;
@@ -52,20 +55,24 @@ p {
 #main-content {
   background-color: rgb(35, 0, 46);
   width: 98%;
-  height: 100vh;
+  height: auto;
   margin-left: 1%;
   padding-top: 15px;
   margin-top: 15px;
   display: flex;
   align-content: center;
   justify-content: center;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
 }
 #main-content #DKR-content {
   width: 80%;
   margin-top: 10vh;
   justify-items: center;
+  margin-bottom: auto;
 }
 #main-content #DKR-content .tittle {
+  text-decoration: underline;
   color: #eee1cc;
   font-size: 50px;
   font-family: "Black Ops One", system-ui;
@@ -75,6 +82,29 @@ p {
   width: 60%;
   font-size: 22px;
   text-align: center;
+}
+#main-content #DKR-content #buttonArea {
+  padding-top: 10vh;
+  display: flex;
+  gap: 5vh;
+}
+#main-content #DKR-content #buttonArea #BTN1 {
+  background-color: #94a392;
+  cursor: pointer;
+}
+#main-content #DKR-content #buttonArea #BTN2 {
+  background-color: #2b3268;
+  color: #eee1cc;
+  cursor: pointer;
+}
+#main-content #DKR-content #buttonArea .button {
+  width: 25vh;
+  height: 5vh;
+  border-radius: 5px;
+  border: none;
+  font-family: "roboto";
+  font-size: 12px;
+  font-weight: bolder;
 }
 
 /* === EFEITO DAS PÉTALAS (10% DA PÁGINA) === */
