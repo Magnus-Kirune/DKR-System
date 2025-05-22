@@ -55,7 +55,7 @@ p {
 #main-content {
   background-color: rgb(35, 0, 46);
   width: 98%;
-  height: auto;
+  height: 100vh;
   margin-left: 1%;
   padding-top: 15px;
   margin-top: 15px;
@@ -67,9 +67,11 @@ p {
 }
 #main-content #DKR-content {
   width: 80%;
+  border: solid 1px white;
   margin-top: 10vh;
   justify-items: center;
   margin-bottom: auto;
+  padding-bottom: 10vh;
 }
 #main-content #DKR-content .tittle {
   text-decoration: underline;
@@ -130,7 +132,7 @@ p {
 
 @keyframes falling {
   0% {
-    transform: translateY(-100vh) rotate(0deg);
+    transform: translateY(-100vh) rotate(0deg) tra;
   }
   100% {
     transform: translateY(100vh) rotate(360deg);

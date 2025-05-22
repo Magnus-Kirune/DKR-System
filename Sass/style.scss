@@ -62,7 +62,7 @@ body {
 #main-content{
     background-color: $extreme-dark;
     width: 98%;
-    height: auto;
+    height: 100vh;
     margin-left: 1%;
     padding-top: 15px;
     margin-top: 15px;
@@ -74,10 +74,11 @@ body {
     
     #DKR-content{
         width: 80%;
-
+        border: solid 1px white;
         margin-top: 10vh;
         justify-items: center;
         margin-bottom: auto;
+        padding-bottom: 10vh;
 
         .tittle{
             text-decoration: underline;
@@ -146,9 +147,10 @@ body {
 
 @keyframes falling {
   0% {
-    transform: translateY(-100vh) rotate(0deg);
+    transform: translateY(-100vh) rotate(0deg) tra;
   }
   100% {
     transform: translateY(100vh) rotate(360deg);
   }
 }
+

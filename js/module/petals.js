@@ -1,7 +1,7 @@
 export function efeitoPetala(){
     // Cria pétalas dinamicamente
       const container = document.getElementById('petals');
-      const colors = ['#8A2BE2', '#C3B1E1', '#4B0082', '#9370DB', '#2E0854' ];
+      const colors = ['#627ebf','#8A2BE2', '#C3B1E1', '#4B0082', '#9370DB', '#2E0854', '#e92458', '#800000' ];
 
       for (let i = 0; i < 80; i++) {
         const petal = document.createElement('div');
